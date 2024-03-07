@@ -4,7 +4,7 @@ import { Badge, IconButton, Toolbar, Typography, styled } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { useAtom } from 'jotai';
-import { navToggleButton } from '@/atoms';
+import { navToggleButton } from '@/pages/atoms';
 
 const drawerWidth: number = 240;
 

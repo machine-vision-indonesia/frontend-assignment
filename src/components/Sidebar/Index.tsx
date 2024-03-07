@@ -4,7 +4,7 @@ import MuiDrawer from "@mui/material/Drawer";
 import { Divider, IconButton, List, Toolbar, styled } from "@mui/material";
 import { mainListItems } from "./ListItems";
 import { useAtom } from "jotai";
-import { navToggleButton } from "@/atoms";
+import { navToggleButton } from "@/pages/atoms";
 
 const drawerWidth: number = 240;
 
