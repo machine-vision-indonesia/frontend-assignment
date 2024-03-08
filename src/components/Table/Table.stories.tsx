@@ -34,13 +34,14 @@ Default.decorators = [withQueryClient]
 
 Default.args = {
     columns: [
-        {field: 'id', headerName: 'ID', width: 150, editable: false},
-        {field: 'name', headerName: '[ITEM] NAME', width: 150, editable: false},
+        {field: 'id', headerName: 'ID', width: 150, editable: false, flex: 1},
+        {field: 'first_name', headerName: 'NAME', width: 150, editable: false, flex: 1},
         {
             field: 'actions',
             headerName: 'ACTIONS',
             width: 180,
             editable: false,
+            flex: 1,
             renderCell: () => (
                 <>
                     <Button variant='text' color='primary' size='small'>

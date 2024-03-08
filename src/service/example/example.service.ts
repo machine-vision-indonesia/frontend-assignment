@@ -17,7 +17,7 @@ interface IResponse<T> {
   }
 }
 
-interface FetchParametrs extends IParams {
+interface FetchParameters extends IParams {
   search?: string
 }
 
@@ -25,7 +25,7 @@ interface FetchParametrs extends IParams {
  * @NOTE hanya boleh ada satu PRIMARY_QUERY_KEY di dalam file, jika berbeda silahkan buat file baru.
  * agar codenya lebih terstruktur dan lebih mudah di baca
  */
-const PRIMARY_QUERY_KEY = 'MT_PAGES'
+const PRIMARY_QUERY_KEY = 'USERS'
 
 /**
  *
@@ -33,7 +33,7 @@ const PRIMARY_QUERY_KEY = 'MT_PAGES'
  * @param params
  * @returns response
  */
-export const GetTablePage = <T>(params: FetchParametrs = {}) => {
+export const GetTablePage = <T>(params: FetchParameters = {}) => {
   const requestOption: any = { retry: false }
   const queryParam: IParams = {
     filter: {
@@ -44,7 +44,7 @@ export const GetTablePage = <T>(params: FetchParametrs = {}) => {
   const keys = [PREFIX_KEY.GET, PRIMARY_QUERY_KEY, queryParam]
 
   const fetch = async <T>(params: IParams): Promise<IResponse<T>> => {
-    const { data } = await client.api.get<IResponse<T>>('/items/mt_pages', {
+    const { data } = await client.api.get<IResponse<T>>('/users', {
       params
     })
 
