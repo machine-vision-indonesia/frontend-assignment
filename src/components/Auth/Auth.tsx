@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import client from '@/client'
 
 export const Auth = () => {
-    const [username, setUsername] = useState('frontendassignee@machinevision.global')
+    const [username, setUsername] = useState('johndoe@mail.com')
     const [status, setStatus] = useState('logged out')
     const [password, setPassword] = useState('')
 
