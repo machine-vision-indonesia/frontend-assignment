@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from 'axios'
 
 // ** Config
-import authConfig from 'src/configs/auth'
+import authConfig from '@/config/auth'
 
 const gql = axios.create({
   baseURL: process.env.NEXT_PUBLIC_GQL_API_URL,

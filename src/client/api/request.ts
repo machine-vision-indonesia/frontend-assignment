@@ -1,5 +1,5 @@
 import axios, { type AxiosResponse } from 'axios'
-import authConfig from 'src/configs/auth'
+import authConfig from '@/config/auth'
 import jwt_decode, { type JwtPayload } from 'jwt-decode'
 
 const api = axios.create({
