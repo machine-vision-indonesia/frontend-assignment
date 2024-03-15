@@ -15,7 +15,7 @@ This assignment involves starting with a blank page and adding a table that make
 Email       :   johndoe@mail.com
 Password    :   12345678
 ```
-7. **Objectives:** Use provided Table component to list all data from mentioned endpoint. For every row, there is action buttons to edit the data.
+7. **Objectives:** Use provided Table component to list all data from mentioned endpoint.
 8. **Atomic Commits:** Your commits should be atomic and follow the conventional commit format as outlined at [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 9. **Pull Request:** Once you have completed the assignment, create a pull request to the main repository's `assessment` branch for review.
 
